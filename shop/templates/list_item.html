@@ -8,7 +8,7 @@
 </head>
 <body>
     {% for item in items%}
-    <li>{{item}}</li>
+    <li><a href="{% url 'detail' item.id %}">{{item.name}} - {{item.price}} сом</a></li>
 
     {%endfor%}
 </body>

@@ -4,7 +4,11 @@ from .models import Item, Purchase
 
 
 def index(request):
-    return HttpResponse("Вы на странице index")
+    items_list = Item.objects.all()
+    context = {
+        'items_list':items_list
+    }
+    return render(request,'index.html',context)
 
 def list_item(request):
     items = Item.objects.all()
