@@ -13,6 +13,7 @@ tovar10 = Item.objects.create(name="Куртка", price=1000)
 
 
 tovar1.purchases.create(name="Нурлан",age=30)
+tovar1.purchases.create(name="Айгул",age=30)
 tovar2.purchases.create(name="Рустам",age=31)
 tovar4.purchases.create(name="Алмаз",age=32)
 tovar5.purchases.create(name="Бакыт",age=33)
