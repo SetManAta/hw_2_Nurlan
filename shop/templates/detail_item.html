@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        {%csrf_token%}
+        <fieldset>
+            <h3>{{items.name}}</h3>
+            <h3>{{items.price}}</h3>
+            {% for purchases in items.purchases.all %}
+            
+            <label>{{purchases.name}}</label>
+            {%endfor%}
+        </fieldset>
+        
+    </form>
+
+</body>
+</html>
